@@ -16,7 +16,7 @@ class EmailAddressParser
     # within the regular expression, we are identifying two possible strings to split on:
     # ", " or " "
     # the pipe | represents OR in a regular expression 
-    # .uniq is an array method that removes duplicate values of self and returns a new array
+    # .uniq is an array method that removes duplicate values from the array it is called on and returns a new array
     emails.split(/, | /).uniq
   end
 end
